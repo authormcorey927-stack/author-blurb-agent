@@ -1,8 +1,10 @@
-from agent.blurb_generator import generate_blurb
+from agent import generate_blurb
 
 book = {
-    "title": "Test Book",
-    "genre": "Fantasy"
+    "title": "The Last Signal",
+    "genre": "science fiction",
+    "hook": "A dying transmission may be humanity’s final warning."
 }
 
-print(generate_blurb(book))
+blurb = generate_blurb(book)
+print(blurb)
